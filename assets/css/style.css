@@ -1,0 +1,48 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: url('../images/bg-body.jpg') center no-repeat #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	font-size: 13px;
+}
+
+.wrapper {
+	overflow: hidden;
+	text-align: center;
+}
+
+.logo {
+	display: block;
+	margin: 10% auto 0;
+	max-width: 100%;
+}
+
+.icon-font {
+	color: #27AE60;
+	display: inline-block;
+	font-size: 3em;
+	margin: 1.7em 1% 0;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0px 0px 15px #000;
+}
+
+.icon-font span { display: none; }
+
+.icon-font:hover {
+	color: white;
+}

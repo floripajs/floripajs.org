@@ -1,6 +1,6 @@
 # FloripaJS
 
-Website of FloripaJS foundation
+Official website of FloripaJS foundation
 
 ## Credits
 

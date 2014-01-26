@@ -4,4 +4,4 @@ Official website of FloripaJS foundation
 
 ## Credits
 
-[Diogo Moretti](http://github.com/diogovedder) and [Fernando Daciuk](http://github.com/fdaciuk)
+[Diogo Moretti](http://github.com/diogomoretti) and [Fernando Daciuk](http://github.com/fdaciuk)

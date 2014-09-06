@@ -23,7 +23,9 @@ body {
 }
 
 .wrapper {
+    border-bottom: 3px solid #27aE60;
     overflow: hidden;
+    padding-bottom: 100px;
     text-align: center;
 }
 
@@ -34,13 +36,13 @@ body {
 }
 
 .icon-font {
-    color: #27AE60;
+    color: #27aE60;
     display: inline-block;
     font-size: 3em;
-    margin: 1.7em 1% 0;
     text-align: center;
     text-decoration: none;
     text-shadow: 0px 0px 15px #000;
+    margin: 1.7em 1% 0;
 }
 
 .icon-font span {
@@ -53,6 +55,7 @@ body {
 
 .meetup {
     background: #fff;
+    font-family: "Helvetica Neue", "Open Sans", sans-serif;
     padding: 50px 0;
 }
 
@@ -60,6 +63,14 @@ body {
     margin: 0 auto;
     overflow: auto;
     width: 960px;
+}
+
+.subtitle {
+    color: #27aE60;
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .col-4, .col-8 {
@@ -74,6 +85,39 @@ body {
     width: 34%;
 }
 
+.talks-title {
+    background: #000;
+    border-radius: 0 15px 15px 0;
+    color: #27aE60;
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    padding: 15px 0 15px 40px;
+    position: relative;
+    width: 75%;
+}
+
+.talks-title span {
+    background: url('../images/hexagon.png') no-repeat;
+    display: inline-block;
+    font-size: 23px;
+    height: 73px;
+    left: -60px;
+    padding-left: 25px;
+    padding-top: 12px;
+    position: absolute;
+    top: -3px;
+    width: 84px;
+}
+
+.talks-title small {
+    display: block;
+    font-size: 15px;
+    font-weight: 100;
+    padding-left: 4px;
+}
+
 ul {
     list-style: none;
 }
@@ -83,8 +127,50 @@ ul {
     float: left;
 }
 
+.talks {
+    border-top: 1px solid #f1f1f1;
+    font-weight: 200;
+    margin: 10px 0;
+    overflow: auto;
+    padding-top: 10px;
+}
+
+.talks:first-child {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.talks img {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+
+.geek {
+    font-size: 15px;
+    color: #666;
+    display: inline-block;
+    margin-top: 8px;;
+    width: 130px;
+}
+
+.talks .icon-font {
+    color: #666;
+    font-size: 15px;
+    margin: 0;
+    text-shadow: 0 0 0;
+}
+
+.talks .icon-font:hover {
+    color: #27aE60;
+}
+
 .talks strong {
+    color: #27aE60;
     display: block;
+    font-weight: 200;
+    font-size: 16px;
 }
 
 .introduction {

@@ -93,9 +93,9 @@ body {
     font-weight: 200;
     margin-bottom: 20px;
     margin-left: 60px;
-    padding: 15px 0 15px 40px;
+    padding: 15px 0 19px 40px;
     position: relative;
-    width: 75%;
+    width: 80%;
 }
 
 .talks-title span {
@@ -107,7 +107,7 @@ body {
     padding-left: 25px;
     padding-top: 12px;
     position: absolute;
-    top: -3px;
+    top: -2px;
     width: 84px;
 }
 
@@ -177,4 +177,49 @@ ul {
     float: right;
     margin-right: 35px;
     width: 50%;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 22px;
+    text-align: justify;
+    margin-top: 6px;
+}
+
+.highlight {
+    font-weight: 400;
+    font-size: large;
+}
+
+.details {
+    color: #27aE60;
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 25px;
+    padding-left: 20px;
+}
+
+.details li {
+    margin: 10px 0;
+}
+
+.details i {
+    background: url('../images/sprite.gif') no-repeat 0 0;
+    display: block;
+    float: left;
+    margin-right: 7px;
+    width: 28px;
+}
+
+i.address {
+    height: 25px;
+    background-position: -2px 0px;
+}
+
+i.price {
+    background-position: 0px -78px;
+    height: 23px;
+}
+
+i.time {
+    background-position: 0px -44px;
+    height: 20px;
 }

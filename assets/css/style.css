@@ -56,7 +56,7 @@ body {
 .meetup {
     background: #fff;
     font-family: "Helvetica Neue", "Open Sans", sans-serif;
-    padding: 50px 0;
+    padding: 50px 0 30px 0;
 }
 
 .container {
@@ -91,7 +91,7 @@ body {
     color: #27aE60;
     font-size: 30px;
     font-weight: 200;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     margin-left: 60px;
     padding: 15px 0 19px 40px;
     position: relative;
@@ -193,7 +193,7 @@ ul {
     color: #27aE60;
     font-size: 15px;
     font-weight: 200;
-    margin-top: 25px;
+    margin-top: 40px;
     padding-left: 20px;
 }
 
@@ -222,4 +222,38 @@ i.price {
 i.time {
     background-position: 0px -44px;
     height: 20px;
+}
+
+.split {
+    border-top: 1px solid #ccc;
+    margin: 50px auto 0 auto;
+    width: 300px;
+    height: 50px;
+}
+
+.split i {
+    background: url('../images/split.gif') no-repeat;
+    display: inline-block;
+    height: 19px;
+    margin: 0 auto;
+    width: 41px;;
+}
+
+footer {
+    background-color: #000;
+    font-family: "Helvetica Neue", "Open Sans", sans-serif;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #27aE60;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+footer a  {
+    color: #27aE60;
+    font-size: 14px;
+    text-decoration: none;
 }

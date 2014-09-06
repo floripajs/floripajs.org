@@ -14,8 +14,8 @@ html, body {
 }
 
 body {
-    -webkit-background-size: cover;
     -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
 
     background: url('../images/bg-body.jpg') center no-repeat #000;
@@ -39,10 +39,10 @@ body {
     color: #27aE60;
     display: inline-block;
     font-size: 3em;
+    margin: 1.7em 1% 0;
     text-align: center;
     text-decoration: none;
     text-shadow: 0px 0px 15px #000;
-    margin: 1.7em 1% 0;
 }
 
 .icon-font span {
@@ -148,10 +148,10 @@ ul {
 }
 
 .geek {
-    font-size: 15px;
     color: #666;
     display: inline-block;
-    margin-top: 8px;;
+    font-size: 15px;
+    margin-top: 8px;
     width: 130px;
 }
 
@@ -175,13 +175,13 @@ ul {
 
 .introduction {
     float: right;
-    margin-right: 35px;
-    width: 50%;
     font-size: 16px;
     font-weight: 200;
     line-height: 22px;
-    text-align: justify;
+    margin-right: 35px;
     margin-top: 6px;
+    text-align: justify;
+    width: 50%;
 }
 
 .highlight {
@@ -226,17 +226,21 @@ i.time {
 
 .split {
     border-top: 1px solid #ccc;
-    margin: 50px auto 0 auto;
-    width: 300px;
     height: 50px;
+    margin: 50px auto 0 auto;
+    position: relative;;
+    width: 300px;
 }
 
 .split i {
     background: url('../images/split.gif') no-repeat;
     display: inline-block;
     height: 19px;
+    left: 128px;;
     margin: 0 auto;
-    width: 41px;;
+    position: absolute;
+    top: -10px;
+    width: 41px;
 }
 
 footer {
@@ -252,8 +256,105 @@ footer p {
     font-weight: 200;
 }
 
-footer a  {
+footer .icon-font {
     color: #27aE60;
-    font-size: 14px;
-    text-decoration: none;
+    font-size: 15px;
+    margin: 0;
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 750px;
+    }
+
+    .col-4, .col-8 {
+        clear: both;
+        float: none;
+        overflow: auto;
+        width: 100%;
+    }
+
+    .col-4 {
+        border-top: 1px solid #ccc;
+        margin-top: 10px;;
+        padding-top: 20px;
+    }
+
+    .map {
+        display: block;
+        text-align: center;
+    }
+
+    .talks-title {
+        width: 85%;
+    }
+
+    .talks-ct {
+        float: left;
+    }
+
+    .introduction {
+        float: right;
+        margin: 0;
+        width: 60%;
+    }
+}
+
+@media (max-width: 770px) {
+    .container {
+        width: 100%;
+    }
+
+    .col-4, .col-8 {
+        clear: both;
+        float: none;
+        overflow: auto;
+        width: 100%;
+    }
+
+    .col-4 {
+        border-top: 1px solid #ccc;
+        margin-top: 10px;;
+        padding-top: 20px;
+    }
+
+    .map {
+        display: block;
+        text-align: center;
+    }
+
+    .talks-title {
+        width: 80%;
+    }
+
+    .talks-ct {
+        border-bottom: 1px solid #ccc;
+        float: none;
+        margin-bottom: 10px;;
+        width: 99%;
+    }
+
+    .introduction {
+        float: none;
+        margin-left: 5px;
+        width: 95%;
+    }
+
+    footer p {
+        line-height: 20px;
+        margin: 0 auto;
+        width: 365px;
+    }
+}
+
+@media (max-width: 500px) {
+    .talks-title {
+        width: 75%;
+    }
 }

@@ -347,7 +347,7 @@ footer .icon-font {
     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 380px) {
     .subtitle {
         font-size: 32px;
     }

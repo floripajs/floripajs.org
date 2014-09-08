@@ -347,8 +347,21 @@ footer .icon-font {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 340px) {
+    .subtitle {
+        font-size: 32px;
+    }
+
     .talks-title {
         width: 65%;
+        font-size: 20px;
+    }
+
+    .introduction {
+        margin: 0 auto;
+    }
+
+    footer p {
+        width: 255px;
     }
 }

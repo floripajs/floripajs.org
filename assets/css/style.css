@@ -9,20 +9,8 @@
     padding: 0;
 }
 
-html, body {
-    height: 100%;
-}
-
-body {
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-
-    background: url('../images/bg-body.jpg') center no-repeat #000;
-    font-size: 13px;
-}
-
 .wrapper {
+    background: url('../images/bg-body.jpg') center -300px no-repeat #000;
     border-bottom: 3px solid #27aE60;
     overflow: hidden;
     padding-bottom: 100px;
@@ -356,5 +344,11 @@ footer .icon-font {
 @media (max-width: 500px) {
     .talks-title {
         width: 75%;
+    }
+}
+
+@media (max-width: 320px) {
+    .talks-title {
+        width: 65%;
     }
 }

@@ -87,16 +87,17 @@
 }
 
 .talks-title span {
-    background: url('../images/hexagon.png') no-repeat;
+    background: url("../images/hexagon.png") no-repeat 0 0;
+    background-size: 100% auto;
     display: inline-block;
     font-size: 23px;
-    height: 73px;
+    height: 64px;
     left: -60px;
     padding-left: 25px;
     padding-top: 12px;
     position: absolute;
-    top: -2px;
-    width: 84px;
+    top: -4px;
+    width: 58px;
 }
 
 .talks-title small {
@@ -308,10 +309,14 @@ footer .icon-font {
     .map {
         display: block;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .talks-title {
         width: 85%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .talks-ct {
@@ -346,10 +351,20 @@ footer .icon-font {
     .map {
         display: block;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .talks-title {
-        width: 80%;
+        width: 87%;
+        margin: 20px 5% 30px 8%;
+        padding-left: 10%;
+    }
+    .talks-title span {
+        left: -20px;
+        padding-left: 19px;
+        top: -4px;
+        width: 55px;
     }
 
     .talks-ct {
@@ -358,11 +373,18 @@ footer .icon-font {
         margin-bottom: 10px;;
         width: 99%;
     }
+    .talks {
+        padding: 10px 16px;
+    }
 
     .introduction {
         float: none;
         margin-left: 5px;
         width: 95%;
+    }
+    .map {
+        width: 90%;
+        margin: 0 auto;
     }
 
     footer p {
@@ -386,6 +408,7 @@ footer .icon-font {
     .talks-title {
         width: 65%;
         font-size: 20px;
+        padding-left: 80px;
     }
 
     .introduction {

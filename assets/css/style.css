@@ -154,11 +154,16 @@ ul {
     color: #27aE60;
 }
 
-.talks strong {
+.talks strong, .talks strong a {
     color: #27aE60;
     display: block;
     font-weight: 200;
     font-size: 16px;
+    text-decoration: none;
+}
+
+.talks strong a:hover {
+    color: #666;
 }
 
 .introduction {

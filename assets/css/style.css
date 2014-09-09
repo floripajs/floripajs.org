@@ -74,8 +74,8 @@
 }
 
 .talks-title {
-    background: #000;
-    border-radius: 0 15px 15px 0;
+    background: url("../images/chamfer-right.png") no-repeat 100% 0 #000;
+    background-size: auto 100%;
     color: #27aE60;
     font-size: 30px;
     font-weight: 200;
@@ -129,12 +129,17 @@ ul {
     padding-top: 0;
 }
 
-.talks img {
+.talks .avatar {
+    background-color: #27aE60;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
     display: inline-block;
+    height: 52px;
     float: left;
     margin-right: 10px;
+    width: 60px;
 }
-
 .geek {
     color: #666;
     display: inline-block;
@@ -145,9 +150,10 @@ ul {
 
 .talks .icon-font {
     color: #666;
-    font-size: 15px;
+    font-size: 20px;
+    line-height: 15px;
     margin: 0;
-    text-shadow: 0 0 0;
+    text-shadow: none;
 }
 
 .talks .icon-font:hover {
@@ -176,7 +182,30 @@ ul {
     font-weight: 400;
     font-size: large;
 }
-
+.map {
+    background: url("../images/maps.jpg") no-repeat 0 0;
+    background-size: auto 100%;
+    height: 70px;
+    width: 100%;
+}
+.map:hover {
+    opacity: 0.9;
+}
+.map {
+    display: block;
+}
+.map > span, .talks .avatar > span {
+    background: url("../images/chamfer-left.png") no-repeat 0 0;
+}
+.map > span > span, .talks .avatar > span > span {
+    background: url("../images/chamfer-right.png") no-repeat 100% 0;
+}
+.map span, .talks .avatar span {
+    display: block;
+    background-size: auto 100% !important;
+    height: 100%;
+    width: 100%;
+}
 .details {
     color: #27aE60;
     font-size: 15px;
@@ -186,30 +215,27 @@ ul {
 }
 
 .details li {
-    margin: 10px 0;
-}
-
-.details i {
-    background: url('../images/sprite.gif') no-repeat 0 0;
+    margin: 20px 0;
     display: block;
+    clear: both;
+}
+.details i {
     float: left;
+    font-size: 25px;
+    line-height: 15px;
     margin-right: 7px;
-    width: 28px;
+    position: relative;
+    text-shadow: none;
+}
+i.icon-location {
+    top: 5px;
+}
+i.icon-clock {
+    top: -3px;
 }
 
-i.address {
-    height: 25px;
-    background-position: -2px 0px;
-}
-
-i.price {
-    background-position: 0px -78px;
-    height: 23px;
-}
-
-i.time {
-    background-position: 0px -44px;
-    height: 20px;
+i.icon-ticket {
+    top: -3px;
 }
 
 .split {

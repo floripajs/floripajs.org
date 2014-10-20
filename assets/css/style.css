@@ -193,34 +193,48 @@ ul {
     width: 50%;
 }
 
+.introduction a {
+    color: #666;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
 .highlight {
     font-weight: 400;
     font-size: large;
 }
+
 .map {
     background: url("../images/maps.jpg") no-repeat 50% 50%;
     background-size: auto 100%;
     height: 70px;
     width: 100%;
 }
+
 .map:hover {
     opacity: 0.9;
 }
+
 .map {
     display: block;
 }
+
 .map > span, .talks .avatar > span {
     background: url("../images/chamfer-left.png") no-repeat 0 0;
 }
+
 .map > span > span, .talks .avatar > span > span {
     background: url("../images/chamfer-right.png") no-repeat 100% 0;
 }
+
 .map span, .talks .avatar span {
     display: block;
     background-size: auto 100% !important;
     height: 100%;
     width: 100%;
 }
+
 .details {
     color: #27aE60;
     font-size: 15px;
@@ -234,6 +248,7 @@ ul {
     display: block;
     clear: both;
 }
+
 .details i {
     float: left;
     font-size: 25px;
@@ -242,9 +257,20 @@ ul {
     position: relative;
     text-shadow: none;
 }
+
+.details a {
+    color: #27aE60;
+    text-decoration: none;
+}
+
+.details a:hover {
+    color: green;
+}
+
 i.icon-location {
     top: 5px;
 }
+
 i.icon-clock {
     top: -3px;
 }
@@ -372,6 +398,7 @@ footer .icon-font {
         margin: 20px 5% 30px 8%;
         padding-left: 75px;
     }
+
     .talks-title span {
         left: -20px;
         padding-left: 29px;
@@ -385,6 +412,7 @@ footer .icon-font {
         margin-bottom: 10px;;
         width: 99%;
     }
+
     .talks {
         padding: 10px 16px;
     }
@@ -394,6 +422,7 @@ footer .icon-font {
         margin-left: 5px;
         width: 95%;
     }
+
     .map {
         width: 90%;
         margin: 0 auto;
@@ -423,12 +452,14 @@ footer .icon-font {
         padding-left: 70px;
         width: 65%;
     }
+
     .talks-title span {
         left: -20px;
         padding-left: 19px;
         top: -4px;
         width: 55px;
     }
+
     .introduction {
         margin: 0 auto;
     }

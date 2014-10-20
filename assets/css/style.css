@@ -53,6 +53,15 @@
     width: 960px;
 }
 
+
+.past {
+    opacity: .3;
+}
+
+.past:hover {
+    opacity: 1;
+}
+
 .subtitle {
     color: #27aE60;
     font-size: 40px;
@@ -247,9 +256,13 @@ i.icon-ticket {
 .split {
     border-top: 1px solid #ccc;
     height: 50px;
-    margin: 50px auto 0 auto;
-    position: relative;;
+    margin: 50px auto 10px auto;
+    position: relative;
     width: 300px;
+}
+
+.split:last-child {
+    margin-bottom: 0;
 }
 
 .split i {

@@ -85,14 +85,19 @@
 .talks-title {
     background: url("../images/chamfer-right.png") no-repeat 100% 0 #000;
     background-size: auto 100%;
-    color: #27aE60;
-    font-size: 30px;
-    font-weight: 200;
     margin-bottom: 35px;
     margin-left: 60px;
     padding: 15px 0 19px 40px;
     position: relative;
     width: 80%;
+}
+
+.talks-title h3 {
+  width: 100px;
+  display: inline;
+  color: #27aE60;
+  font-size: 30px;
+  font-weight: 200;
 }
 
 .talks-title span {
@@ -114,6 +119,20 @@
     font-size: 15px;
     font-weight: 100;
     padding-left: 4px;
+}
+
+.talks-title a {
+  float: right;
+  margin: 15px 25px 0 0;
+  color: #fff;
+  font-weight: 200;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.talks-title a:hover {
+  color: #27aE60;
 }
 
 ul {

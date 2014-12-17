@@ -1,0 +1,489 @@
+* {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    background: url('../images/bg-body.jpg') center -300px no-repeat #000;
+    border-bottom: 3px solid #27aE60;
+    overflow: hidden;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin: 5% auto 0;
+    max-width: 100%;
+}
+
+.icon-font {
+    color: #27aE60;
+    display: inline-block;
+    font-size: 3em;
+    margin: 1.7em 1% 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 0px 15px #000;
+}
+
+.icon-font span {
+    display: none;
+}
+
+.icon-font:hover {
+    color: #fff;
+}
+
+.meetup {
+    background: #fff;
+    font-family: "Helvetica Neue", "Open Sans", sans-serif;
+    padding: 50px 0 30px 0;
+}
+
+.container {
+    margin: 0 auto;
+    overflow: auto;
+    width: 960px;
+}
+
+
+.past {
+    opacity: .3;
+}
+
+.past:hover {
+    opacity: 1;
+}
+
+.subtitle {
+    color: #27aE60;
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.col-4, .col-8 {
+    float: left;
+}
+
+.col-8 {
+    width: 66%;;
+}
+
+.col-4 {
+    width: 34%;
+}
+
+.talks-title {
+    background: url("../images/chamfer-right.png") no-repeat 100% 0 #000;
+    background-size: auto 100%;
+    margin-bottom: 35px;
+    margin-left: 60px;
+    padding: 15px 0 19px 40px;
+    position: relative;
+    width: 80%;
+}
+
+.talks-title h3 {
+  width: 100px;
+  display: inline;
+  color: #27aE60;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.talks-title span {
+    background: url("../images/hexagon.png") no-repeat 0 0;
+    background-size: 100% auto;
+    display: inline-block;
+    font-size: 23px;
+    height: 64px;
+    left: -60px;
+    padding-left: 25px;
+    padding-top: 12px;
+    position: absolute;
+    top: -4px;
+    width: 58px;
+}
+
+.talks-title small {
+    display: block;
+    font-size: 15px;
+    font-weight: 100;
+    padding-left: 4px;
+}
+
+.talks-title a {
+  float: right;
+  margin: 15px 25px 0 0;
+  color: #fff;
+  font-weight: 200;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.talks-title a:hover {
+  color: #27aE60;
+}
+
+ul {
+    list-style: none;
+}
+
+.talks-ct {
+    display: inline-block;
+    float: left;
+}
+
+.talks {
+    border-top: 1px solid #f1f1f1;
+    font-weight: 200;
+    margin: 10px 0;
+    overflow: auto;
+    padding-top: 10px;
+}
+
+.talks:first-child {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.talks .avatar {
+    background-color: #27aE60;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: inline-block;
+    height: 52px;
+    float: left;
+    margin-right: 10px;
+    width: 60px;
+}
+.geek {
+    color: #666;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 8px;
+    width: 130px;
+}
+
+.talks .icon-font {
+    color: #666;
+    font-size: 20px;
+    line-height: 15px;
+    margin: 0;
+    text-shadow: none;
+}
+
+.talks .icon-font:hover {
+    color: #27aE60;
+}
+
+.talks strong, .talks strong a {
+    color: #27aE60;
+    display: block;
+    font-weight: 200;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.talks strong a:hover {
+    color: #666;
+}
+
+.introduction {
+    float: right;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 22px;
+    margin-right: 35px;
+    margin-top: 6px;
+    text-align: justify;
+    width: 50%;
+}
+
+.introduction a {
+    color: #666;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.highlight {
+    font-weight: 400;
+    font-size: large;
+}
+
+.map {
+    background: url("../images/maps.jpg") no-repeat 50% 50%;
+    background-size: auto 100%;
+    height: 70px;
+    width: 100%;
+}
+
+.map:hover {
+    opacity: 0.9;
+}
+
+.map {
+    display: block;
+}
+
+.map > span, .talks .avatar > span {
+    background: url("../images/chamfer-left.png") no-repeat 0 0;
+}
+
+.map > span > span, .talks .avatar > span > span {
+    background: url("../images/chamfer-right.png") no-repeat 100% 0;
+}
+
+.map span, .talks .avatar span {
+    display: block;
+    background-size: auto 100% !important;
+    height: 100%;
+    width: 100%;
+}
+
+.details {
+    color: #27aE60;
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
+.details li {
+    margin: 20px 0;
+    display: block;
+    clear: both;
+}
+
+.details i {
+    float: left;
+    font-size: 25px;
+    line-height: 15px;
+    margin-right: 7px;
+    position: relative;
+    text-shadow: none;
+}
+
+.details a {
+    color: #27aE60;
+    text-decoration: none;
+}
+
+.details a:hover {
+    color: green;
+}
+
+i.icon-location {
+    top: 5px;
+}
+
+i.icon-clock {
+    top: -3px;
+}
+
+i.icon-ticket {
+    top: -3px;
+}
+
+.split {
+    border-top: 1px solid #ccc;
+    height: 50px;
+    margin: 50px auto 10px auto;
+    position: relative;
+    width: 300px;
+}
+
+.split:last-child {
+    margin-bottom: 0;
+}
+
+.split i {
+    background: url('../images/split.gif') no-repeat;
+    display: inline-block;
+    height: 19px;
+    left: 128px;;
+    margin: 0 auto;
+    position: absolute;
+    top: -10px;
+    width: 41px;
+}
+
+footer {
+    background-color: #000;
+    font-family: "Helvetica Neue", "Open Sans", sans-serif;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #27aE60;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+footer .icon-font {
+    color: #27aE60;
+    font-size: 15px;
+    margin: 0;
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 750px;
+    }
+
+    .col-4, .col-8 {
+        clear: both;
+        float: none;
+        overflow: auto;
+        width: 100%;
+    }
+
+    .col-4 {
+        border-top: 1px solid #ccc;
+        margin-top: 10px;;
+        padding-top: 20px;
+    }
+
+    .map {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .talks-title {
+        width: 85%;
+        margin: 20px auto 30px 8%;
+    }
+
+    .talks-ct {
+        float: left;
+    }
+
+    .introduction {
+        float: right;
+        margin: 0;
+        width: 60%;
+    }
+}
+
+@media (max-width: 770px) {
+    .container {
+        width: 100%;
+    }
+
+    .col-4, .col-8 {
+        clear: both;
+        float: none;
+        overflow: auto;
+        width: 100%;
+    }
+
+    .col-4 {
+        border-top: 1px solid #ccc;
+        margin-top: 10px;;
+        padding-top: 20px;
+    }
+
+    .map {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .talks-title {
+        width: 77%;
+        margin: 20px 5% 30px 8%;
+        padding-left: 75px;
+    }
+
+    .talks-title span {
+        left: -20px;
+        padding-left: 29px;
+        top: -5px;
+        width: 57px;
+    }
+
+    .talks-ct {
+        border-bottom: 1px solid #ccc;
+        float: none;
+        margin-bottom: 10px;;
+        width: 99%;
+    }
+
+    .talks {
+        padding: 10px 16px;
+    }
+
+    .introduction {
+        float: none;
+        margin-left: 5px;
+        width: 95%;
+    }
+
+    .map {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    footer p {
+        line-height: 20px;
+        margin: 0 auto;
+        width: 365px;
+    }
+}
+
+@media (max-width: 500px) {
+    .talks-title {
+        width: 75%;
+    }
+}
+
+@media (max-width: 380px) {
+    .subtitle {
+        font-size: 32px;
+    }
+
+    .talks-title {
+        font-size: 20px;
+        margin: 20px 5% 20px 10%;
+        padding-left: 70px;
+        width: 65%;
+    }
+
+    .talks-title span {
+        left: -20px;
+        padding-left: 19px;
+        top: -4px;
+        width: 55px;
+    }
+
+    .introduction {
+        margin: 0 auto;
+    }
+
+    footer p {
+        width: 255px;
+    }
+}

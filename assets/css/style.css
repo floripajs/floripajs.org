@@ -440,7 +440,7 @@ footer .icon-font {
     }
 
     .talks-title span {
-        left: -20px;
+        left: -23px;
         padding-left: 29px;
         top: -5px;
         width: 57px;
@@ -489,15 +489,22 @@ footer .icon-font {
     .talks-title {
         font-size: 20px;
         margin: 20px 5% 20px 10%;
+        padding-bottom: 16px;
         padding-left: 70px;
+        padding-top: 17px;
         width: 65%;
+    }
+    .talks-title h3 {
+        font-size: 20px;
     }
 
     .talks-title span {
-        left: -20px;
-        padding-left: 19px;
+        font-size: 20px;
+        left: -22px;
+        padding: 8px;
+        text-align: center;
         top: -4px;
-        width: 55px;
+        width: 58px;
     }
 
     .introduction {

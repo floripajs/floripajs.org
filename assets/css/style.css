@@ -201,11 +201,12 @@ ul {
     font-size: 16px;
     text-decoration: none;
 }
-
+.talks strong a {
+    margin-top: 0.8em;
+}
 .talks strong a:hover {
     color: #666;
 }
-
 .introduction {
     float: right;
     font-size: 14px;
@@ -234,16 +235,15 @@ ul {
     background-size: auto 100%;
     height: 70px;
     width: 100%;
+    display: block;
 }
 
 .map:hover {
     opacity: 0.9;
 }
-
-.map {
-    display: block;
+.map.jlle {
+    background-image: url("../images/maps-jlle.jpg");
 }
-
 .map > span, .talks .avatar > span {
     background: url("../images/chamfer-left.png") no-repeat 0 0;
 }

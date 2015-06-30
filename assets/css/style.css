@@ -281,16 +281,37 @@ ul {
     position: relative;
     text-shadow: none;
 }
-
+.details .confirm-meetup {
+    color: #F20000;
+    display: block;
+    margin-top: 0.5em;
+    width: 78%;
+    margin-left: 13%;
+}
 .details a {
     color: #27aE60;
     text-decoration: none;
 }
-
 .details a:hover {
     color: green;
 }
-
+.details a svg {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+.details a .meetup-logo .box {
+    fill: #999;
+}
+.details a .meetup-logo .text {
+    fill: #777;
+}
+.details a:hover .meetup-logo .box {
+    fill: #F20000;
+}
+.details a:hover .meetup-logo .text {
+    fill: #000;
+}
 i.icon-location {
     top: 5px;
 }

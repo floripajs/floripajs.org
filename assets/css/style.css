@@ -381,6 +381,19 @@ footer .icon-font {
 .clearfix { display: block; }
 /* close commented backslash hack */
 
+.button-send-talk {
+    display: inline-block !important;
+    background: #27AE60;
+    font-size: 1.1em;
+    color: #fff !important;
+    padding: .3em 1em;
+    border-radius: 3px;
+    border-bottom: 2px solid #2f975b;
+}
+
+.button-send-talk:hover {
+    background: #2eba69;
+}
 
 @media (min-width: 992px) {
     .container {

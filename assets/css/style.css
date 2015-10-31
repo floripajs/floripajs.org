@@ -145,7 +145,7 @@ ul {
 }
 
 .talks {
-    border-top: 1px solid #f1f1f1;
+    border-top: 1px solid #E0E2E1;
     font-weight: 200;
     margin: 10px 0;
     overflow: auto;
@@ -285,7 +285,7 @@ ul {
     color: #F20000;
     display: block;
     margin-top: 0.5em;
-    width: 78%;
+    width: 80%;
     margin-left: 13%;
 }
 .details a {
@@ -548,4 +548,17 @@ footer .icon-font {
     footer p {
         width: 255px;
     }
+}
+
+.location {
+    margin-left: 42px;
+}
+.bold {
+    font-weight: bold;
+}
+
+.details-location {
+    float: left;
+    position: relative;
+    clear: both;
 }

@@ -9,25 +9,25 @@
 			},
 			talkers: [
 				{
-					name: 'Palestrante 1',
-					img: '',
+					name: 'Diego Candido',
+					img: 'https://lh3.googleusercontent.com/--GVFKFuK-sg/T8jshId9xGI/AAAAAAAAAdY/o_lFNZhbs6w/s79-no/diego-imagem.png',
 					twitter: '',
 					github: '',
-					lecture: ''
+					lecture: 'Overview of Meteor'
 				},
 				{
-					name: 'Palestrante 2',
-					img: '',
-					twitter: '',
-					github: '',
-					lecture: ''
+					name: 'Darlan Alves',
+					img: 'https://avatars0.githubusercontent.com/u/745095?v=3&s=460',
+					twitter: 'https://twitter.com/angularjsdev',
+					github: 'https://github.com/darlanalves',
+					lecture: 'Clean Code e os 10 mandamentos <br/>da programação'
 				},
 				{
-					name: 'Palestrante 3',
-					img: '',
-					twitter: '',
-					github: '',
-					lecture: ''
+					name: 'Eduardo Nunes',
+					img: 'https://avatars3.githubusercontent.com/u/582516?v=3&s=460',
+					twitter: 'https://twitter.com/edununesp',
+					github: 'https://github.com/eduardonunesp',
+					lecture: 'Golang - O poder da simplicidade	'
 				},
 			],
 			location: {
@@ -62,7 +62,7 @@
 				},
 				{
 					name: 'Giorgio Fellipe',
-					img: 'https://pbs.twimg.com/profile_images/487076987899375617/nPhdC7HA_400x400.jpeg',
+					img: 'https://pbs.twimg.com/profile_images/660875767073607680/U52N9wmx_400x400.jpg',
 					twitter: 'https://twitter.com/giiorgio_',
 					github: 'https://github.com/giorgiofellipe',
 					lecture: 'Ionic Framework - Construindo apps híbridos lindos e performáticos com AngularJS'

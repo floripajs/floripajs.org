@@ -11,9 +11,9 @@
 				{
 					name: 'Diego Candido',
 					img: 'https://lh3.googleusercontent.com/--GVFKFuK-sg/T8jshId9xGI/AAAAAAAAAdY/o_lFNZhbs6w/s79-no/diego-imagem.png',
-					twitter: '',
-					github: '',
-					lecture: 'Overview of Meteor'
+					twitter: 'https://twitter.com/diegocdesouza',
+					github: 'http://github.com/diegocandido',
+					lecture: 'Meteor Overview'
 				},
 				{
 					name: 'Darlan Alves',

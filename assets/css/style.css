@@ -148,7 +148,7 @@ ul {
     border-top: 1px solid #E0E2E1;
     font-weight: 200;
     margin: 10px 0;
-    overflow: auto;
+    overflow: hidden;
     padding-top: 10px;
 }
 
@@ -201,8 +201,8 @@ ul {
     font-size: 16px;
     text-decoration: none;
 }
-.talks strong a {
-    margin-top: 0.8em;
+.talks strong {
+    padding-top: 0.8em;
 }
 .talks strong a:hover {
     color: #666;

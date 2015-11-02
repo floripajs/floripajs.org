@@ -1,32 +1,41 @@
-(function(_){
-		
-	//array de eventos
-	var events = [
+(function () {
+    'use strict'
+    //array of events
+    var events = [
 		{
 			date: {
 				day: '19',
 				month: 'Dez'
 			},
-			talkers: [
+			talks: [
 				{
-					name: 'Diego Candido',
-					img: 'https://lh3.googleusercontent.com/--GVFKFuK-sg/T8jshId9xGI/AAAAAAAAAdY/o_lFNZhbs6w/s79-no/diego-imagem.png',
-					twitter: 'https://twitter.com/diegocdesouza',
-					github: 'http://github.com/diegocandido',
-					lecture: 'Meteor Overview'
+					talkers: [
+						{
+							name: 'Diego Candido',
+							img: 'https://lh3.googleusercontent.com/--GVFKFuK-sg/T8jshId9xGI/AAAAAAAAAdY/o_lFNZhbs6w/s79-no/diego-imagem.png',
+							twitter: '',
+							github: ''
+						}],
+					lecture: 'Overview of Meteor'
 				},
 				{
-					name: 'Darlan Alves',
-					img: 'https://avatars0.githubusercontent.com/u/745095?v=3&s=460',
-					twitter: 'https://twitter.com/angularjsdev',
-					github: 'https://github.com/darlanalves',
+					talkers: [
+						{
+							name: 'Darlan Alves',
+							img: 'https://avatars0.githubusercontent.com/u/745095?v=3&s=460',
+							twitter: 'https://twitter.com/angularjsdev',
+							github: 'https://github.com/darlanalves'
+						}],
 					lecture: 'Clean Code e os 10 mandamentos <br/>da programação'
 				},
 				{
-					name: 'Eduardo Nunes',
-					img: 'https://avatars3.githubusercontent.com/u/582516?v=3&s=460',
-					twitter: 'https://twitter.com/edununesp',
-					github: 'https://github.com/eduardonunesp',
+					talkers: [
+						{
+							name: 'Eduardo Nunes',
+							img: 'https://avatars3.githubusercontent.com/u/582516?v=3&s=460',
+							twitter: 'https://twitter.com/edununesp',
+							github: 'https://github.com/eduardonunesp'
+						}],
 					lecture: 'Golang - O poder da simplicidade	'
 				},
 			],
@@ -40,38 +49,50 @@
 			},
 			introduction: 'Fala galera, esse será o nosso último encontro de 2015, praticamente um encontro de natal, então vamos fazer deste mais um meetup incrível como foram os outros.'
 		},
-        {
+		{
 			date: {
 				day: '19',
 				month: 'Set'
 			},
-			talkers: [
+			talks: [
 				{
-					name: 'Lívia Amorim',
-					img: 'https://pbs.twimg.com/profile_images/631443194153201664/URex41nj_400x400.jpg',
-					twitter: 'https://twitter.com/liviavamorim',
-					github: 'https://github.com/liviamorim',
+					talkers: [
+						{
+							name: 'Lívia Amorim',
+							img: 'https://pbs.twimg.com/profile_images/631443194153201664/URex41nj_400x400.jpg',
+							twitter: 'https://twitter.com/liviavamorim',
+							github: 'https://github.com/liviamorim'
+						}],
 					lecture: 'SVG para leigos: do vetor a animação'
 				},
 				{
-					name: 'Guilherme Oderdenge',
-					img: 'https://pbs.twimg.com/profile_images/658724137632976897/yCDvaX6Y_400x400.jpg',
-					twitter: 'https://twitter.com/Chiefgui',
-					github: 'https://github.com/Chiefgui',
+					talkers: [
+						{
+							name: 'Guilherme Oderdenge',
+							img: 'https://pbs.twimg.com/profile_images/658724137632976897/yCDvaX6Y_400x400.jpg',
+							twitter: 'https://twitter.com/Chiefgui',
+							github: 'https://github.com/Chiefgui'
+						}],
 					lecture: 'Uma verdade inconveniente sobre as frameworks JavaScript'
 				},
 				{
-					name: 'Giorgio Fellipe',
-					img: 'https://pbs.twimg.com/profile_images/660875767073607680/U52N9wmx_400x400.jpg',
-					twitter: 'https://twitter.com/giiorgio_',
-					github: 'https://github.com/giorgiofellipe',
+					talkers: [
+						{
+							name: 'Giorgio Fellipe',
+							img: 'https://pbs.twimg.com/profile_images/660875767073607680/U52N9wmx_400x400.jpg',
+							twitter: 'https://twitter.com/giiorgio_',
+							github: 'https://github.com/giorgiofellipe'
+						}],
 					lecture: 'Ionic Framework - Construindo apps híbridos lindos e performáticos com AngularJS'
 				},
 				{
-					name: 'Bruno Ventura',
-					img: 'https://avatars3.githubusercontent.com/u/4433497?v=3&s=460',
-					twitter: '',
-					github: 'https://github.com/brunoventura',
+					talkers: [
+						{
+							name: 'Bruno Ventura',
+							img: 'https://avatars3.githubusercontent.com/u/4433497?v=3&s=460',
+							twitter: '',
+							github: 'https://github.com/brunoventura'
+						}],
 					lecture: 'Crawleando cervejas com NodeJS for dummies'
 				}
 			],
@@ -90,7 +111,7 @@
 				day: '18',
 				month: 'Jul'
 			},
-			talkers: [
+			talks: [
 				{
 					talkers: [
 						{
@@ -109,17 +130,23 @@
 					lecture: 'Websockets: invertendo<br /> a comunicação na web'
 				},
 				{
-					name: 'André Gustavo Espeiorín',
-					img: 'https://avatars3.githubusercontent.com/u/185327',
-					twitter: 'http://twitter.com/espeiorin',
-					github: 'http://github.com/espeiorin',
+					talkers: [
+						{
+							name: 'André Gustavo Espeiorín',
+							img: 'https://avatars3.githubusercontent.com/u/185327',
+							twitter: 'http://twitter.com/espeiorin',
+							github: 'http://github.com/espeiorin'
+						}],
 					lecture: 'JavascriptCore para<br /> integração com iOS'
 				},
 				{
-					name: 'Aurélio Jargas',
-					img: 'https://avatars0.githubusercontent.com/u/282592',
-					twitter: 'http://twitter.com/oreio',
-					github: 'http://github.com/aureliojargas',
+					talkers: [
+						{
+							name: 'Aurélio Jargas',
+							img: 'https://avatars0.githubusercontent.com/u/282592',
+							twitter: 'http://twitter.com/oreio',
+							github: 'http://github.com/aureliojargas'
+						}],
 					lecture: 'Expressões regulares<br /> para JavaScript'
 				}
 			],
@@ -133,35 +160,44 @@
 				linkMeetup: 'http://www.meetup.com/floripajs/events/223586762/'
 			},
 			introduction: 'E chegamos ao <b>7º encontro</b> da comunidade de desenvolvedores, designers e interessados em tecnologias front-end de Santa Catarina, a mais ativa do Brasil!<br/><br/>'
-				+ 'Depois da épica edições com <b>mais de 60 devs</b> em Floripa, pela segunda vez, vamos sair de ilha. O próximo encontro será em <b>Joinville</b> com talks bacanas e muita gente nova interessada em ensinar, aprender e fazer networking.'
+			+ 'Depois da épica edições com <b>mais de 60 devs</b> em Floripa, pela segunda vez, vamos sair de ilha. O próximo encontro será em <b>Joinville</b> com talks bacanas e muita gente nova interessada em ensinar, aprender e fazer networking.'
 		},
 		{
 			date: {
 				day: '30',
 				month: 'Mai'
 			},
-			talkers: [
+			talks: [
 				{
-					name: 'Gabriel Zigolis',
-					img: 'https://avatars3.githubusercontent.com/u/2637502',
-					twitter: 'http://twitter.com/zigolis',
-					github: 'http://github.com/zigolis',
+					talkers: [
+						{
+							name: 'Gabriel Zigolis',
+							img: 'https://avatars3.githubusercontent.com/u/2637502',
+							twitter: 'http://twitter.com/zigolis',
+							github: 'http://github.com/zigolis'
+						}],
 					lecture: 'Backbone for You!',
 					lectureLink: 'http://zigolis.github.io/backbone-hello-mundo-rest/'
 				},
 				{
-					name: 'Sérgio Siqueira',
-					img: 'https://avatars2.githubusercontent.com/u/2046276',
-					twitter: 'http://twitter.com/serg1ors',
-					github: 'http://github.com/sergiors',
+					talkers: [
+						{
+							name: 'Sérgio Siqueira',
+							img: 'https://avatars2.githubusercontent.com/u/2046276',
+							twitter: 'http://twitter.com/serg1ors',
+							github: 'http://github.com/sergiors'
+						}],
 					lecture: "Startup's World!",
 					lectureLink: 'https://slides.com/sergiors/'
 				},
 				{
-					name: 'Júnior Rocha (Xuxu)',
-					img: 'https://pbs.twimg.com/profile_images/656247793309323264/cr0Ns8B6_400x400.jpg',
-					twitter: 'http://twitter.com/juniorocha90',
-					github: 'http://github.com/floripajs',
+					talkers: [
+						{
+							name: 'Júnior Rocha (Xuxu)',
+							img: 'https://pbs.twimg.com/profile_images/656247793309323264/cr0Ns8B6_400x400.jpg',
+							twitter: 'http://twitter.com/juniorocha90',
+							github: 'http://github.com/floripajs'
+						}],
 					lecture: 'Entrega contínua <br/> (Do FTP ao Git)'
 				}
 			],
@@ -181,26 +217,35 @@
 				day: '14',
 				month: 'Mar'
 			},
-			talkers: [
+			talks: [
 				{
-					name: 'Ricardo Longa',
-					img: 'https://pbs.twimg.com/profile_images/3736504915/9ebbad5037aad68b0da6cb84ad1f46ea_400x400.jpeg',
-					twitter: 'https://twitter.com/ricardolonga',
-					github: 'http://github.com/ricardolonga',
+					talkers: [
+						{
+							name: 'Ricardo Longa',
+							img: 'https://pbs.twimg.com/profile_images/3736504915/9ebbad5037aad68b0da6cb84ad1f46ea_400x400.jpeg',
+							twitter: 'https://twitter.com/ricardolonga',
+							github: 'http://github.com/ricardolonga'
+						}],
 					lecture: 'SOLID'
 				},
 				{
-					name: 'Deivis Wingert',
-					img: 'https://pbs.twimg.com/profile_images/679812005/cousin-itt_400x400.jpg',
-					twitter: 'https://twitter.com/DeivisWingert',
-					github: 'https://github.com/deiviswingert',
+					talkers: [
+						{
+							name: 'Deivis Wingert',
+							img: 'https://pbs.twimg.com/profile_images/679812005/cousin-itt_400x400.jpg',
+							twitter: 'https://twitter.com/DeivisWingert',
+							github: 'https://github.com/deiviswingert'
+						}],
 					lecture: 'Programação funcional'
 				},
 				{
-					name: 'Renan Carvalho',
-					img: 'https://pbs.twimg.com/profile_images/1113214394/REnan_400x400.jpg',
-					twitter: 'http://twitter.com/rcarvalhojs',
-					github: 'http://github.com/renancarvalho',
+					talkers: [
+						{
+							name: 'Renan Carvalho',
+							img: 'https://pbs.twimg.com/profile_images/1113214394/REnan_400x400.jpg',
+							twitter: 'http://twitter.com/rcarvalhojs',
+							github: 'http://github.com/renancarvalho'
+						}],
 					lecture: 'Testes unitários'
 				}
 			],
@@ -220,20 +265,26 @@
 				month: 'Jan',
 				videoLink: 'https://plus.google.com/b/105163745880818582482/105163745880818582482/videos'
 			},
-			talkers: [
+			talks: [
 				{
-					name: 'Danillo Corvalan',
-					img: 'https://pbs.twimg.com/profile_images/427761427470770176/T3pW3F_t.jpeg',
-					twitter: 'https://twitter.com/DanilloCorvalan',
-					github: 'http://github.com/DanilloCorvalan',
+					talkers: [
+						{
+							name: 'Danillo Corvalan',
+							img: 'https://pbs.twimg.com/profile_images/427761427470770176/T3pW3F_t.jpeg',
+							twitter: 'https://twitter.com/DanilloCorvalan',
+							github: 'http://github.com/DanilloCorvalan'
+						}],
 					lecture: 'Building your front-end with WebPack',
 					lectureLink: 'http://www.slideshare.net/danillocorvalan/bundling-your-frontend-with-webpack'
 				},
 				{
-					name: 'Christian James',
-					img: 'https://pbs.twimg.com/profile_images/378800000788442123/59346a48d93d49ec019a617df862fab5.jpeg',
-					twitter: 'https://twitter.com/contatojames',
-					github: 'https://github.com/christianjames',
+					talkers: [
+						{
+							name: 'Christian James',
+							img: 'https://pbs.twimg.com/profile_images/378800000788442123/59346a48d93d49ec019a617df862fab5.jpeg',
+							twitter: 'https://twitter.com/contatojames',
+							github: 'https://github.com/christianjames'
+						}],
 					lecture: 'Introdução à Test-Driven Development',
 					lectureLink: 'https://docs.google.com/presentation/d/1YVwQ05HGiMz4qFEp14f8p3QmB6mZFCV4o3A1c1uf_QE/edit?usp=sharing'
 				},
@@ -250,12 +301,12 @@
 							img: 'https://pbs.twimg.com/profile_images/463495788681641984/vx5CGZzd.jpeg',
 							twitter: 'https://twitter.com/rsmelo',
 							github: 'https://github.com/rsmelo'
-						},	
-						
+						},
+
 					],
 					lecture: 'Continuous Integration with Team City',
 					lectureLink: 'http://pt.slideshare.net/aerogustavo/integrao-contnua-44093813'
-					
+
 				}
 			],
 			location: {
@@ -274,28 +325,37 @@
 				month: 'Dez',
 				videoLink: 'https://www.youtube.com/watch?v=_N5uQk6MWow'
 			},
-			talkers: [
+			talks: [
 				{
-					name: 'Luiz Estácio',
-					img: 'https://pbs.twimg.com/profile_images/551289243973066753/nwohwEz_.png',
-					twitter: 'http://twitter.com/luizstacio',
-					github: 'http://github.com/luizstacio',
+					talkers: [
+						{
+							name: 'Luiz Estácio',
+							img: 'https://pbs.twimg.com/profile_images/551289243973066753/nwohwEz_.png',
+							twitter: 'http://twitter.com/luizstacio',
+							github: 'http://github.com/luizstacio'
+						}],
 					lecture: 'Angular (blogMV*)',
 					lectureLink: 'https://docs.google.com/presentation/d/1UwXIwOClqmjgp8iAnDX3y339__PLJsyCHdReU5CE5a0/edit?usp=sharing'
 				},
 				{
-					name: 'Renan Carvalho',
-					img: 'https://pbs.twimg.com/profile_images/1113214394/REnan_400x400.jpg',
-					twitter: 'http://twitter.com/rcarvalhojs',
-					github: 'http://github.com/renancarvalho',
+					talkers: [
+						{
+							name: 'Renan Carvalho',
+							img: 'https://pbs.twimg.com/profile_images/1113214394/REnan_400x400.jpg',
+							twitter: 'http://twitter.com/rcarvalhojs',
+							github: 'http://github.com/renancarvalho'
+						}],
 					lecture: 'Backbone (blogMV*)',
 					lectureLink: 'http://www.slideshare.net/renancarvalho583/backbone-the-good-parts'
 				},
 				{
-					name: 'Sérgio Siqueira',
-					img: 'https://avatars2.githubusercontent.com/u/2046276',
-					twitter: 'http://twitter.com/serg1ors',
-					github: 'http://github.com/sergiors',
+					talkers: [
+						{
+							name: 'Sérgio Siqueira',
+							img: 'https://avatars2.githubusercontent.com/u/2046276',
+							twitter: 'http://twitter.com/serg1ors',
+							github: 'http://github.com/sergiors'
+						}],
 					lecture: 'React (blogMV*)',
 					lectureLink: 'https://slides.com/sergiors/react'
 				}
@@ -316,28 +376,37 @@
 				month: 'Nov',
 				videoLink: 'https://www.youtube.com/watch?v=3911QNjlkPQ'
 			},
-			talkers: [
+			talks: [
 				{
-					name: 'Guilherme Oderdenge',
-					img: 'https://avatars3.githubusercontent.com/u/1330257',
-					twitter: 'http://twitter.com/chiefgui',
-					github: 'http://github.com/chiefgui',
+					talkers: [
+						{
+							name: 'Guilherme Oderdenge',
+							img: 'https://avatars3.githubusercontent.com/u/1330257',
+							twitter: 'http://twitter.com/chiefgui',
+							github: 'http://github.com/chiefgui'
+						}],
 					lecture: 'Gulp na veia!!!',
 					lectureLink: 'http://chiefgui.github.io/gulp-ftw/'
 				},
 				{
-					name: 'Pedro Nauck',
-					img: 'https://pbs.twimg.com/profile_images/638244042447409152/Ku5PUub9_400x400.jpg',
-					twitter: 'http://twitter.com/pedronauck',
-					github: 'http://github.com/pedronauck',
+					talkers: [
+						{
+							name: 'Pedro Nauck',
+							img: 'https://pbs.twimg.com/profile_images/638244042447409152/Ku5PUub9_400x400.jpg',
+							twitter: 'http://twitter.com/pedronauck',
+							github: 'http://github.com/pedronauck'
+						}],
 					lecture: 'ES6 hoje (Grunt)',
 					lectureLink: 'https://speakerdeck.com/pedronauck/es6-using-the-new-javascript-today'
 				},
 				{
-					name: 'Thiago Vieira',
-					img: 'https://pbs.twimg.com/profile_images/2218363885/profile3.png',
-					twitter: 'http://twitter.com/thiagovieiracom',
-					github: 'http://github.com/thiagovieiracom',
+					talkers: [
+						{
+							name: 'Thiago Vieira',
+							img: 'https://pbs.twimg.com/profile_images/2218363885/profile3.png',
+							twitter: 'http://twitter.com/thiagovieiracom',
+							github: 'http://github.com/thiagovieiracom'
+						}],
 					lecture: 'UX na equipe Dev',
 					lectureLink: 'http://pt.slideshare.net/thiagovieiracom/ux-designer-em-time-de-developers'
 				}
@@ -358,28 +427,37 @@
 				month: 'Set',
 				videoLink: 'https://www.youtube.com/watch?v=DwFnBK10yjQ'
 			},
-			talkers: [
+			talks: [
 				{
-					name: 'Gabriel Zigolis',
-					img: 'https://avatars3.githubusercontent.com/u/2637502',
-					twitter: 'http://twitter.com/zigolis',
-					github: 'http://github.com/zigolis',
+					talkers: [
+						{
+							name: 'Gabriel Zigolis',
+							img: 'https://avatars3.githubusercontent.com/u/2637502',
+							twitter: 'http://twitter.com/zigolis',
+							github: 'http://github.com/zigolis'
+						}],
 					lecture: 'blogMV* (Backbone)',
 					lectureLink: 'http://zigolis.github.io/backbone-hello-mundo-rest/'
 				},
 				{
-					name: 'Diogo Moretti',
-					img: 'https://pbs.twimg.com/profile_images/520362913148588034/O3Iid-Rx_bigger.jpeg',
-					twitter: 'http://twitter.com/diogomoretti_',
-					github: 'http://github.com/diogomoretti',
+					talkers: [
+						{
+							name: 'Diogo Moretti',
+							img: 'https://pbs.twimg.com/profile_images/520362913148588034/O3Iid-Rx_bigger.jpeg',
+							twitter: 'http://twitter.com/diogomoretti_',
+							github: 'http://github.com/diogomoretti'
+						}],
 					lecture: 'Grid System',
 					lectureLink: 'http://diogomoretti.github.io/grider/'
 				},
 				{
-					name: 'Bruno Possidonio',
-					img: 'https://pbs.twimg.com/profile_images/502807700624125952/s7pCAr7C_400x400.jpeg',
-					twitter: 'http://twitter.com/pssdn',
-					github: 'http://github.com/pssdn',
+					talkers: [
+						{
+							name: 'Bruno Possidonio',
+							img: 'https://pbs.twimg.com/profile_images/502807700624125952/s7pCAr7C_400x400.jpeg',
+							twitter: 'http://twitter.com/pssdn',
+							github: 'http://github.com/pssdn'
+						}],
 					lecture: 'Git Flow',
 					lectureLink: 'https://github.com/pssdn/mustached-nemesis'
 				}
@@ -394,19 +472,65 @@
 			},
 			introduction: 'É uma iniciativa dos devs de SC para contribuir com o crescimento profissional da comunidade como um todo, através da troca de experiências e visões acerca de problemas e tecnologias.'
 		}
-    ];
+    ],
+		containerMaster = document.getElementById('containerMaster');
 
-    //Busca a template e injeta o array de eventos
-	var template = _.template(document.getElementById('templateContainerPast').innerHTML);
-	document.getElementById('containerMaster').innerHTML = template({events: events});
+    //Validate if ES6 arrow-fuctions are supported by the browser
+	//We use arrow functions to validation because it's the part of 
+	//ES6 used in this script less supported by the browsers 	
+    var es6Supported = function(){
+    	"use strict";
+    		if (typeof Symbol == "undefined"){ 
+				return false;
+			}
+    		try {
+          		eval("var bar = (x) => x+1");
+    		} catch (e) { 
+				return false; 
+			}
+    	return true;
+	}();
 
-	//Inicializa o componente do google analytics
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    // requirejs configurations
+    window.requirejs.config({
+        baseUrl: 'assets/js/lib',
+        paths: {
+            es5App: '../es5App.min',
+            es6App: '../es6App.min',
+            underscore: 'underscore.min'
+        },
+        shim: {
+            es5App: {
+                deps: ['underscore'],
+                exports: 'es5App'
+            },
+            underscore: {
+                exports: '_'
+            }
+        }
+    });
+	
+    if (es6Supported) {
+		console.log('es6 mode');
+        window.requirejs(["es6App"], function (es6App) {
+			containerMaster.innerHTML = es6App.createEventsTemplate(events); 
+        });
+    } else {
+		console.log('es5 mode');
+        window.requirejs(["es5App"], function (es5App) {
+            es5App(events, containerMaster);
+        });
+    }
 
-	ga('create', 'UA-41143432-1', 'floripajs.org');
-	ga('send', 'pageview');
+    //Initializes the google analytics's component 
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-})(_);
+    ga('create', 'UA-41143432-1', 'floripajs.org');
+    ga('send', 'pageview');
+
+})();

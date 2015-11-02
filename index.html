@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="assets/css/fontello.css" />
         <link rel="stylesheet" href="assets/css/style.css" />
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="assets/js/underscore-min.js"></script>
+        <script type="text/javascript" src="assets/js/lib/require.min.js"></script>
     </head>
 
     <body>
@@ -74,23 +74,23 @@
                             </div>
 
                             <ul class="talks-ct">
-                                <% _.each(ev.talkers, function(talker, key, list) { %> 
+                                <% _.each(ev.talks, function(talk, key, list) { %> 
                                     <li class="talks">
                                         <% var template = _.template(document.getElementById('templateMember').innerHTML)
                                             result = '';
-
-                                        if(talker.talkers){
-                                            _.each(talker.talkers, function(talkerIn, key, list) { 
+                                            _.each(talk.talkers, function(talkerIn, key, list) { 
                                                 result += template({talker: talkerIn});
                                             });
-                                        }else{
-                                             result = template({talker: talker});
-                                        }%>
+                                            %>                                        
                                         <%= result%>
                                         <strong>
-                                            <a href="<%= (talker.lectureLink ? talker.lectureLink : '#')%>" target="_blank">
-                                                <%=talker.lecture%>
-                                            </a>
+                                             <%if(talk.lectureLink){%>
+                                                <a href="<%= talk.lectureLink %>" target="_blank">
+                                                    <%=talk.lecture%>
+                                                </a>
+                                            <%}else{%>
+                                                <%=talk.lecture%>
+                                            <%}%>
                                         </strong>
                                     </li>
                                 <% });%>
@@ -184,6 +184,6 @@
             </p>
         </footer>
 
-        <script type="text/javascript" src="assets/js/app.js"></script>
+        <script type="text/javascript" src="assets/js/app.min.js"></script>
     </body>
 </html>

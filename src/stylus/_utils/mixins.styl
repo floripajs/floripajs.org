@@ -1,0 +1,17 @@
+section-divisor($bg = #eee, $elev = 'left')
+  content: ''
+  position: absolute
+  if $elev == 'left'
+    bottom: -17.7em
+  else
+    bottom: -16.7em
+  left: -2em
+  display: block
+  width: 120%
+  height: 20em
+  background: $bg
+  if $elev == 'left'
+    transform: rotate(2deg)
+  else
+    transform: rotate(-2deg)
+  z-index: 5

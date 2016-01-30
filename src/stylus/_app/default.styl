@@ -1,0 +1,74 @@
+html, body
+  height: 100%
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+body
+  font-size: 62.5%
+  background: #eee
+  font-family: 'Arial', helvetica, sans-serif
+  
+.header
+  position: relative
+  display: flex
+  height: 55em
+  background: url('../img/bg-header.jpg') no-repeat top center
+  overflow: hidden
+
+  &:after
+    content: ''
+    absolute: bottom right left top
+    background: linear-gradient(top, #fff, #bbb)
+    opacity: .8
+    
+  &:before
+    section-divisor()
+
+
+.header-wrapper
+  width: 25em
+  margin: auto
+  z-index: 100
+
+
+// -------
+// section
+// -------
+
+.section
+  @extends $section
+
+.section-title
+  padding-right: 10%
+  
+.section-title--item
+  margin: 0
+  padding: 0
+  font-family: $font-title
+  font-weight: 900
+  font-size: 5em
+  color: $color-secondary
+  position: relative
+  display: inline-block
+  
+  &:after
+    content: ''
+    display: block
+    width: .22em
+    height: @width
+    position: absolute
+    right: -(@width + .1)
+    bottom: @width
+    border-radius: 50%
+    background: $color-primary
+
+.section-content
+  width: 100%
+  
+.section-text
+  color: $color-text
+  font-size: 1.7em
+  font-family: $font-title
+  font-weight: 300
+  line-height: 2em
+  width: 95%

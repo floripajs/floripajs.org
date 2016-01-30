@@ -1,10 +1,18 @@
-section-divisor($bg = #eee, $elev = 'left')
+section-divisor($bg = #eee, $elev = 'left', $pos = 'bottom')
   content: ''
   position: absolute
-  if $elev == 'left'
+  if $pos == 'bottom'
     bottom: -17.7em
+    if $elev == 'left'
+      bottom: -17.7em
+    else
+      bottom: -16.7em
   else
-    bottom: -16.7em
+    top: -17.7em
+    if $elev == 'left'
+      top: -16.7em
+    else
+      top: -16.7em
   left: -2em
   display: block
   width: 120%

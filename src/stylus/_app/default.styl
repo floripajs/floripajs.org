@@ -12,13 +12,13 @@ body
   position: relative
   display: flex
   height: 55em
-  background: url('../img/bg-header.jpg') no-repeat top center
+  background: url('../img/bg-floripa.jpg') no-repeat top center
   overflow: hidden
 
   &:after
     content: ''
     absolute: bottom right left top
-    background: linear-gradient(top, #fff, #bbb)
+    background: linear-gradient(top, #999, #222)
     opacity: .8
     
   &:before
@@ -34,12 +34,15 @@ body
 // -------
 // section
 // -------
+.section-about
+  padding: 4em 0
 
-.section
-  @extends $section
+.section-wrapper
+  z-index: 20
+  @extends $section-wrapper
 
 .section-title
-  padding-right: 10%
+  width: 40%
   
 .section-title--item
   margin: 0
@@ -69,6 +72,35 @@ body
   color: $color-text
   font-size: 1.7em
   font-family: $font-title
-  font-weight: 300
+  font-weight: 400
   line-height: 2em
   width: 95%
+  
+  a
+    color: $color-text
+    text-decoration: none
+    border-bottom: 1px dotted #888
+    padding-bottom: .1em
+    font-weight: 700
+    
+    &:hover
+      color: $color-primary
+
+
+// section: meetup
+.section-meetup
+  padding-top: 7em
+  position: relative
+  display: flex
+  height: 55em
+  background: url('../img/bg-header.jpg') no-repeat top center
+  overflow: hidden
+
+  &:after
+    content: ''
+    absolute: bottom right left top
+    background: linear-gradient(top, #eee, #ccc)
+    opacity: .8
+    
+  &:before
+    section-divisor(#eee, 'left', 'top')

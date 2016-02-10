@@ -8,7 +8,7 @@ var gulp        = require('gulp'),
     hbs         = require('gulp-compile-handlebars'),
     yaml        = require('js-yaml'),
     fs          = require('fs'),
-    clean       = require('gulp-clean'),
+    del         = require('del'),
     ghPages     = require('gulp-gh-pages'),
     runSequence = require('run-sequence');
 
@@ -76,11 +76,10 @@ gulp.task('copy:assets', function() {
 
 /*
   TASK: Clean
-  DESC: Clean content dist folder
+  DESC: Delete dist folder
 */
 gulp.task('clean:dist', function () {
-    return gulp.src('./dist/')
-        .pipe(clean());
+  return del('./dist');
 });
 
 /*
@@ -95,7 +94,7 @@ gulp.task('cname', function() {
   TASK: gh-pages
   DESC: Deploy dist folder to 'gh-pages' remote branch
 */
-gulp.task('gh-pages', function() {
+gulp.task('deploy', function() {
     return gulp.src('./dist/**/*')
         .pipe(ghPages());
 });
@@ -126,13 +125,4 @@ gulp.task('server', function() {
                 'cname',
                 'connect',
                 'watch');
-});
-
-gulp.task('deploy', function() {
-    runSequence('clean:dist',
-                'copy:assets',
-                'stylus', 
-                'handlebars',
-                'cname',
-                'gh-pages');
 });

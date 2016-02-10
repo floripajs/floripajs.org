@@ -7,8 +7,8 @@
     "url": "diogo.pearljam@gmail.com"
   },
   "devDependencies": {
+    "del": "^2.2.0",
     "gulp": "*",
-    "gulp-clean": "^0.3.1",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-connect": "*",
     "gulp-gh-pages": "^0.5.4",

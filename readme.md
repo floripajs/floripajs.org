@@ -14,33 +14,33 @@ This website uses the following technologies:
 
 :heavy_minus_sign: First, install [GulpJS](http://gulpjs.com) in global mode (if you not have):
 
-```
-$ [sudo] npm i -g gulp
+```bash
+[sudo] npm i -g gulp
 ```
 
 ### Develop
 
 :heavy_minus_sign: Clone the project:
 
-```
+```bash
 git clone git@github.com:floripajs/floripajs.org.git
 ```
 
 :heavy_minus_sign: Open the folder on your terminal:
 
-```
+```bash
 cd floripajs.org
 ```
 
 :heavy_minus_sign: Install the dependencies:
 
-```
+```bash
 npm i
 ```
 
 :heavy_minus_sign: Now, open a server with website:
 
-```
+```bash
 gulp server
 ```
 

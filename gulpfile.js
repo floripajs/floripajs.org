@@ -119,12 +119,20 @@ gulp.task('build', function() {
 });
 
 gulp.task('server', function() {
-    runSequence('build',
+    runSequence('clean:dist',
+                'copy:assets',
+                'stylus', 
+                'handlebars',
+                'cname',
                 'connect',
                 'watch');
 });
 
 gulp.task('deploy', function() {
-    runSequence('build',
+    runSequence('clean:dist',
+                'copy:assets',
+                'stylus', 
+                'handlebars',
+                'cname',
                 'gh-pages');
 });

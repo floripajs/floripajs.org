@@ -1,2 +1,0 @@
-# FloripaJS
-> FloripaJS official website

@@ -1,2 +1,2 @@
 # FloripaJS
-> FloripaJS website
+> FloripaJS official website

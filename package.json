@@ -1,10 +1,15 @@
 {
   "name": "floripajs",
   "description": "FloripaJS website",
-  "version": "2.1.0",
+  "version": "2.1.1",
+  "license": "MIT",
   "author": {
     "name": "Diogo Moretti",
     "url": "diogo.pearljam@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/floripajs/floripajs.org.git"
   },
   "devDependencies": {
     "del": "^2.2.0",
@@ -13,6 +18,7 @@
     "gulp-connect": "*",
     "gulp-gh-pages": "^0.5.4",
     "gulp-plumber": "*",
+    "gulp-release-tasks": "0.0.3",
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "0.0.12",
     "gulp-watch": "^4.3.5",

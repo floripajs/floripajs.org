@@ -12,6 +12,9 @@ var gulp        = require('gulp'),
     ghPages     = require('gulp-gh-pages'),
     runSequence = require('run-sequence');
 
+/* RELEASE */
+require('gulp-release-tasks')(gulp);
+
 /*
   TASK: Connect
   DESC: Create a server with livereload

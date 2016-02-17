@@ -99,6 +99,7 @@ body
   
   &:before
     section-divisor(#eee, 'left', 'top')
+    z-index: 14
   
   &:after
     section-divisor(#eee, 'left', 'bottom')
@@ -109,8 +110,8 @@ body
     &:after
       content: ''
       absolute: bottom right left top
-      background: linear-gradient(top, #eee, #999)
-      opacity: .7
+      background: linear-gradient(top, #fff, #ddd)
+      opacity: .8
       z-index: -1
 
 .button-join

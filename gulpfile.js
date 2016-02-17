@@ -12,7 +12,11 @@ var gulp        = require('gulp'),
     ghPages     = require('gulp-gh-pages'),
     runSequence = require('run-sequence');
 
-/* RELEASE */
+/* 
+  RELEASE 
+  Type: `gulp tag` to release a new version
+  Reference: https://github.com/lfender6445/gulp-release-tasks
+*/
 require('gulp-release-tasks')(gulp);
 
 /*

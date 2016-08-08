@@ -58,6 +58,7 @@ Now, after the changes, **Open a Pull Request**:
 
 ## Changelog
 
+- **2016.08.08** – Increase meetup stats and improv on meetup section :punch:
 - **2016.03.21** – 500+ meetup members :stuck_out_tongue_winking_eye:
 - **2016.02.09** – Released website 2.0
 - **2015.12.10** – Add JSON to get all meetups

@@ -7,17 +7,10 @@ var gulp        = require('gulp'),
     rename      = require('gulp-rename'),
     hbs         = require('gulp-compile-handlebars'),
     yaml        = require('js-yaml'),
-    fs          = require('fs'),
+    fs          = require('graceful-fs'),
     del         = require('del'),
     ghPages     = require('gulp-gh-pages'),
     runSequence = require('run-sequence');
-
-/* 
-  RELEASE 
-  Type: `gulp tag` to release a new version
-  Reference: https://github.com/lfender6445/gulp-release-tasks
-*/
-require('gulp-release-tasks')(gulp);
 
 /*
   TASK: Connect

@@ -13,12 +13,12 @@
   },
   "devDependencies": {
     "del": "^2.2.0",
+    "graceful-fs": "^4.1.5",
     "gulp": "*",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-connect": "*",
     "gulp-gh-pages": "^0.5.4",
     "gulp-plumber": "*",
-    "gulp-release-tasks": "0.0.3",
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "0.0.12",
     "gulp-watch": "^4.3.5",

@@ -103,6 +103,15 @@ body
   
   &:after
     section-divisor(#eee, 'left', 'bottom')
+    
+  .section-title--item
+    color: #fff
+    
+  .section-text
+    color: #eee
+    
+    a
+      color: $color-primary
 
   .section-wrapper
     z-index: 10
@@ -110,7 +119,7 @@ body
     &:after
       content: ''
       absolute: bottom right left top
-      background: linear-gradient(top, #fff, #ddd)
+      background: linear-gradient(top, #333, #222)
       opacity: .8
       z-index: -1
 
@@ -141,20 +150,12 @@ body
   .title
     font-weight: 700
     font-size: 1.5em
-    color: $color-secondary + 20%
+    color: #fff
     
   .num
     font-weight: bold
     font-size: 3em
-    color: $color-secondary
-    
-.meetup-support-item--note
-  text-align: center
-  font-size: 1em
-  color: #fff
-  max-width: 20em
-  margin: 0 auto
-  line-height: 1.6em
+    color: #bbb
 
 .button-support
   @extends $button

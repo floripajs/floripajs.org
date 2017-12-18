@@ -1,4 +1,4 @@
-# FloripaJS
+# FloripaJS [![Build Status](https://travis-ci.org/floripajs/floripajs.org.svg?branch=master)](https://travis-ci.org/floripajs/floripajs.org)
 > FloripaJS official website
 
 ## Development

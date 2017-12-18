@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "del": "^2.2.0",
-    "graceful-fs": "^4.1.5",
+    "graceful-fs": "*",
     "gulp": "*",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-connect": "*",

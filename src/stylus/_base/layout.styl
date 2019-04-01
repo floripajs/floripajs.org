@@ -1,8 +1,235 @@
-$section-wrapper
-  display: flex
-  max-width: 1040px
-  margin: 0 auto
-  padding: 6em 2em
+box-sizing-reset()
+normalize()
+
+::-moz-selection
+  background $color-primary
+  color #fff
+
+::selection
+  background $color-primary
+  color #fff
+
+html,
+body
+  height 100%
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  scroll-behavior smooth
+
+html
+  font-size 10px
+
+body
+  position relative
+  font-size 1rem
+  font-family $font-default
+  cursor default
+  padding-top 10em
+  background-attachment fixed
+  bg-lines()
+
+  +below($phone)
+    padding-top 8em
+
+#home
+  position absolute
+  top 0
+  left 0
+
+.logo
+  display block
+  text-decoration none
+
+  &-image
+    position fixed
+    max-width 130px
+    top 10em
+    left 50%
+    margin-left -500px
+    z-index 20
+    
+    +below($desktop-small)
+      margin-left 0
+      left 3em
+
+    +below($phone)
+      max-width 80px
+      top 4em
+
+.menu
+  display flex
+  justify-content flex-end
+  position fixed
+  top 15.8em
+  right 50%
+  margin-right -500px
+  z-index 30
+
+  +below($desktop-small)
+    margin-right 0
+    right 3em
+
+  +below($phone)
+    display none
+
+  &-list
+    list-style none
+    margin 0
+    padding 0
+    display flex
+    font-family $font-alt
+    
+    li
+      margin-left 3em
+
+      +below($tablet)
+        margin-left 2em
+
+      a
+        position relative
+        font-size 1.5rem
+        color #000
+        text-decoration none
+        padding .5em 0
+
+        +below($tablet)
+          font-size 1.4rem
+
+        &:before
+          content ''
+          position absolute
+          background $color-primary
+          height 3px
+          left auto
+          bottom 0
+          right 0
+          width 0
+          transition all .5s cubic-bezier(.23, 1, .32, 1)
+
+        &:hover:before
+          width 100%
+          right auto
+          left 0
+
+        &.btn
+          background $color-primary
+          padding .5em 1.5em
+          text-transform uppercase
+
+          &:hover
+            background @background + 8%
+          
+          &:before
+            display none
+
   
-  @media phone
-    display: block
+  &.lighten
+    a:before
+      background #fff
+
+    .btn
+      color #fff
+      background #000
+
+      &:hover
+        background @background + 8%
+
+.button
+  position relative
+  display inline-block
+  font-family $font-alt
+  color #000
+  padding 1em 2em
+  font-size 1.4rem
+  text-decoration none
+  text-transform uppercase
+  background $color-primary
+  letter-spacing .1em
+  transition background .5s ease
+  cursor pointer
+  border 0
+  outline 0
+
+  &:hover
+    background @background + 10%
+
+  &.button-slack,
+  &.button-meetup,
+  &.button-youtube,
+  &.button-github
+    &:before
+      content ''
+      display inline-block
+      width 18px
+      height @width
+      vertical-align middle
+      margin-top -3px
+      margin-right 4px
+      background-size 100% auto
+      background-repeat no-repeat
+  
+  &.button-slack
+    &:before
+      background-image url('../img/slack-logo.png')
+
+  &.button-youtube
+    &:before
+      background-image url('../img/youtube-logo.png')
+
+  &.button-github
+    &:before
+      background-image url('../img/github-logo.png')
+
+  &.button-meetup
+    &:before
+      width 22px
+      height @width
+      background-image url('../img/meetup-logo.png')
+
+.section-wrapper
+  wrapper()
+  position relative
+  z-index 3
+
+.section-title
+  margin 0 0 .5em 0
+  font-size 5rem
+  color #000
+  font-family $font-alt
+  line-height 1.3
+
+  +below($tablet)
+    font-size 4.4rem
+
+  +below($phone)
+    font-size 3.8rem
+
+.section-description
+  margin 0
+  max-width 700px
+  font-size 1.6rem
+  line-height 2
+  margin-bottom 2em
+
+  +below($phone)
+    font-size 1.4rem
+
+  a
+    color #000
+    font-weight bold
+    text-decoration none
+    border-bottom 2px solid $color-primary
+    padding-bottom .15em
+
+.section-image
+  float right
+  max-width 300px
+  margin-left 1em
+  margin-bottom @margin-left
+  margin-top .6em
+
+  +below($phone)
+    float none
+    display block
+    max-width 100%
+    margin 2em 0 1.6em

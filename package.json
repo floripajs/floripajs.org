@@ -1,30 +1,35 @@
 {
   "name": "floripajs",
-  "description": "FloripaJS website",
-  "version": "2.3.4",
+  "description": "FloripaJS official website",
+  "version": "3.0.0",
   "license": "MIT",
+  "scripts": {
+    "server": "gulp server"
+  },
   "author": {
     "name": "Diogo Moretti",
-    "url": "diogo.pearljam@gmail.com"
+    "email": "diogo.pearljam@gmail.com"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/floripajs/floripajs.org.git"
   },
   "devDependencies": {
-    "del": "^2.2.0",
-    "graceful-fs": "*",
-    "gulp": "*",
+    "del": "^4.0.0",
+    "graceful-fs": "^4.1.15",
+    "gulp": "3.9.1",
     "gulp-compile-handlebars": "^0.6.1",
-    "gulp-connect": "*",
+    "gulp-connect": "^5.7.0",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-plumber": "*",
+    "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.2.2",
-    "gulp-stylus": "0.0.12",
-    "gulp-watch": "^4.3.5",
+    "gulp-stylus": "2.7.0",
+    "gulp-watch": "^5.0.1",
     "js-yaml": "^3.5.2",
-    "nib": "*",
-    "run-sequence": "^1.1.5",
-    "stylus": "*"
+    "kouto-swiss": "^1.1.0",
+    "nib": "^1.1.2",
+    "run-sequence": "^2.2.1",
+    "rupture": "^0.7.1",
+    "stylus": "^0.54.5"
   }
 }

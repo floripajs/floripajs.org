@@ -1,0 +1,129 @@
+.header
+  position relative
+  height 105%
+  padding-top 5em
+  background #fff
+  box-shadow 0 -10px 20px 20px #fff
+
+  +below($phone)
+    height 450px
+
+  &-wrapper
+    wrapper()
+    display flex
+    flex-direction column
+    height 100%
+
+  &-content
+    display flex
+    align-items center
+    flex 1
+
+  &-title
+    font-family $font-title
+    font-weight 700
+    font-size 5.2rem
+    margin 0 0 .5em 0
+    line-height 1.2
+    max-width 700px
+
+    span
+      white-space nowrap
+
+    +below($tablet)
+      font-size 4.8rem
+
+    +below($phone)
+      font-size 3.8rem
+
+.community
+  section(#f6f6f6, true)
+  
+  +below($phone)
+    padding 14em 0 10em
+
+.meetup
+  section(#ddd, true)
+
+.open-source
+  section(#f6f6f6, true)
+
+.videos
+  section(#fff, true)
+
+.ajude
+  section($color-primary, false)
+  
+  +below($phone)
+    padding 5em 0 7em
+
+.footer
+  position relative
+  background #000
+  padding 5em 0
+
+  &-content
+    display flex
+
+    +below($phone)
+      flex-wrap wrap
+
+  &-column
+    padding-right 10em
+
+    &:last-child
+      padding-right 0
+
+    +below($tablet)
+      padding-right 5em
+
+    +below($phone)
+      padding-right 0
+      flex-basis 50%
+
+      &:last-child
+        margin-top 3em
+        flex-basis 100%
+
+  &-credits
+    margin 0
+    color #fff
+    font-size 1.4rem
+    padding-bottom .5em
+
+  &-title
+    color $color-primary
+    margin 0 0 1em 0
+    font-family $font-title
+    font-size 1.8rem
+
+  &-list
+    list-style none
+    margin 0
+    padding 0
+
+    li
+      display block
+      padding .6em 0
+
+      a
+        position relative
+        color #fff
+        font-size 1.4rem
+        text-decoration none
+
+        &:before
+          content ''
+          position absolute
+          background $color-primary
+          height 2px
+          left auto
+          bottom -5px
+          right 0
+          width 0
+          transition all .5s cubic-bezier(.23, 1, .32, 1)
+
+        &:hover:before
+          width 100%
+          right auto
+          left 0

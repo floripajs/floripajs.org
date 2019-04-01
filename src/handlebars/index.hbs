@@ -1,133 +1,212 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-    <title>{{ config.title }} • {{ config.description }}</title>
+  <title>{{ config.title }} • {{ config.description }}</title>
 
-    <!-- CSS -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#000000">
+  <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" href="assets/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="assets/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="{{ config.title }}">
+  <meta property="og:description" content="{{ config.description }}">
+  <meta property="og:image" content="https://floripajs.org/assets/img/social.jpg">
+  <meta property="og:url" content="https://floripajs.org">
+
+  <meta name="twitter:title" content="{{ config.title }}">
+  <meta name="twitter:description" content="{{ config.description }}">
+  <meta name="twitter:image" content="https://floripajs.org/assets/img/social.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body>
+  <body>
+    <div id="home"></div>
+
+    <a class="logo" href="#home">
+      <img class="logo-image" src="assets/img/logo.svg" />
+    </a>
+
+    <nav id="menu" class="menu">
+      <ul class="menu-list">
+        <li>
+          <a href="#comunidade">Comunidade</a>
+        </li>
+        <li>
+          <a href="#meetup">Meetup</a>
+        </li>
+        <li>
+          <a href="#open-source">Open-source</a>
+        </li>
+        <li>
+          <a href="#videos">Vídeos</a>
+        </li>
+        <li>
+          <a class="btn" href="#ajude">Ajude</a>
+        </li>
+      </ul>
+    </nav>
+
     <header class="header">
-        <div class="header-wrapper">
-            <img src="assets/img/floripajs-logo.svg" />
+      <div class="header-wrapper">
+        <div class="header-content">
+          <div class="header-content-inner">
+            <h1 class="header-title">
+              A maior comunidade <span>front-end</span> de Florianópolis
+            </h1>
+            <a class="button" href="#comunidade">
+              Conheça
+            </a>
+          </div>
         </div>
+      </div>
     </header>
 
-    <section class="section-about">
-        <div class="section-wrapper">
-            <div class="section-title">
-                <h1 class="section-title--item">sobre</h1>
-            </div>
-            <div class="section-content">
-                <p class="section-text">
-                    O <strong>FloripaJS</strong> é uma <strong>comunidade</strong> formada em 2012 por um grupo de amigos que queriam fomentar o desenvolvimento front-end em Florianópolis e região. No ano seguinte o grupo começou a fazer reuniões e encontros pela internet. Mas foi apenas em 2014 que o grupo ganhou força devido ao <strong>meetup</strong> que ocorre frequentemente. Hoje o <strong>FloripaJS</strong> é uma das comunidades mais ativas do Brasil, graças ao seu público fiel nos encontros e também apoiando o mundo open-source.
-                </p>
-                <a class="button-contribute" href="{{ config.social.facebook_group }}">Facebook group</a>
-                <a class="button-contribute" href="{{ config.social.slack }}">Slack channel</a>
-            </div>
-        </div>
+    <section id="comunidade" class="community">
+      <div class="section-wrapper">
+        <h1 class="section-title">
+          Comunidade
+        </h1>
+        <p class="section-description">
+          O FloripaJS é uma comunidade formada em 2012 por um grupo de amigos que queriam fomentar o desenvolvimento front-end em Florianópolis e região. No ano seguinte o grupo começou a fazer reuniões e encontros pela internet. Mas foi apenas em 2014 que o grupo ganhou força devido ao meetup que ocorre frequentemente. Hoje o FloripaJS é uma das comunidades mais ativas do Brasil, graças ao seu público fiel nos encontros e também no apoio ao mundo open-source. 
+        </p>
+        <a class="button button-slack" href="#">
+          Slack.floripajs.org
+        </a>
+      </div>
     </section>
 
-    <section class="section-meetup">
-        <div class="section-wrapper">
-            <div class="section-title">
-                <h1 class="section-title--item">meetup</h1>
-            </div>
-            <div class="section-content">
-                <p class="section-text">
-                    Também conhecido como <a href="http://www.meetup.com/floripajs">FloripaJS Devs Meetup</a>, desde a primeira edição em 2014 o encontro ocorre, em média, a cada <strong>45 dias</strong>. Os encontros são totalmente <strong>gratuitos</strong> e sempre contam com o apoio de alguma(s) empresa(s), tanto para o local quanto para brindes, coffee-break e muitas vezes aquele chopp! Participe como quiser dos nossos meetups, seja como participante, speaker ou empresa apoiadora. Nosso foco é <strong>fortalecer a comunidade de desenvolvimento front-end de Floripa e região =]</strong>
-                </p>
-                <div class="meetup-support">
-                    <div class="meetup-support-item">
-                        <p class="meetup-support-item--stats">
-                            <span class="title">Membros</span>
-                            <span class="num">1k+</span>
-                        </p>
-                        <a class="button-join" href="http://www.meetup.com/floripajs">Join Us</a>
-                    </div>
-                    <div class="meetup-support-item">
-                        <p class="meetup-support-item--stats">
-                            <span class="title">Speakers</span>
-                            <span class="num">50+</span>
-                        </p>
-                        <a class="button-support" href="https://github.com/floripajs/talks" target="_blank">Submit</a>
-                    </div>
-                    <div class="meetup-support-item">
-                        <p class="meetup-support-item--stats">
-                            <span class="title">Empresas</span>
-                            <span class="num">20+</span>
-                        </p>
-                        <a class="button-support" href="http://goo.gl/forms/ZSrHzHXUyF" target="_blank">Support Us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="meetup" class="meetup">
+      <div class="section-wrapper">
+        <h1 class="section-title">
+          Meetup
+        </h1>
+        <p class="section-description">
+          <img class="section-image" src="assets/img/meetup.jpg" />
+          Também conhecido como <a href="http://www.meetup.com/floripajs">FloripaJS Devs Meetup</a>, desde a primeira edição em 2014 o meetup ocorre, em média, a cada <strong>45 dias</strong>. Os encontros são totalmente <strong>gratuitos</strong> e sempre contam com o apoio de alguma(s) empresa(s), tanto para o local quanto para brindes, coffee-break e muitas vezes aquele chopp! Participe como quiser dos nossos meetups, seja como participante, speaker ou empresa apoiadora. Nosso foco é <strong>fortalecer a comunidade de desenvolvimento front-end de Florianópolis e região =]</strong>
+        </p>
+        <a class="button button-meetup" href="https://www.meetup.com/floripajs" target="_blank">
+          Participe
+        </a>
+      </div>
     </section>
 
-    <section class="section-github">
-        <div class="section-wrapper">
-            <div class="section-title">
-                <h1 class="section-title--item">github</h1>
-            </div>
-            <div class="section-content">
-                <p class="section-text">
-                    Como forma de retribuir a comunidade tudo aquilo que usamos hoje, temos nosso <strong>github</strong> ainda engatinhando nos projetos open-source. Precisamos de um time grande e forte, para assim criar novos projetos e dar manutenção nos já existentes. Se você deseja <strong>contribuir</strong> com nossos projetos, trazer um projeto novo para nosso github ou somente fazer parte do time, entre em contato com alguns dos devs <a href="https://github.com/orgs/floripajs/people">que lá estão</a> ou pelo e-mail <strong>contato@floripajs.org</strong> =]
-                </p>
-                <a class="button-contribute" href="{{config.social.github}}">Contribute</a>
-            </div>
-        </div>
+    <section id="open-source" class="open-source">
+      <div class="section-wrapper">
+        <h1 class="section-title">
+          Open-source
+        </h1>
+        <p class="section-description">
+          Como forma de retribuir a comunidade tudo aquilo que usamos hoje, temos uma organização no <strong>Github</strong> para nossos projetos open-source. Precisamos de um time grande e forte, para assim criar novos projetos e dar manutenção nos já existentes. Se você deseja <strong>contribuir</strong> com nossos projetos, trazer um projeto novo para nossa organização ou somente fazer parte do time, entre em contato com alguns dos <a href="https://github.com/orgs/floripajs/people" target="_blank">devs que lá estão</a> ou pelo e-mail <a href="mailto:contato@floripajs.org">contato@floripajs.org</a> =]
+        </p>
+        <a class="button button-github" href="#">
+          Contribua
+        </a>
+      </div>
     </section>
 
-    <footer class="footer-contact">
-        <div class="section-wrapper">
-            <div class="footer-contact--social">
-                <ul class="social-list">
-                    <li class="social-item">
-                        <a class="social-link" href="{{ config.social.github }}">
-                            <img src="assets/img/icon-github.png">
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a class="social-link" href="{{ config.social.facebook }}">
-                            <img src="assets/img/icon-facebook.png">
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a class="social-link" href="{{ config.social.twitter }}">
-                            <img src="assets/img/icon-twitter.png">
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a class="social-link" href="{{ config.social.slack }}">
-                            <img src="assets/img/icon-slack.png">
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a class="social-link" href="{{ config.social.youtube }}">
-                            <img src="assets/img/icon-youtube.png">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-contact--credits">
-                <p class="footer-contact--credits_email">
-                    contato@floripajs.org
-                </p>
-            </div>
+    <section id="videos" class="videos">
+      <div class="section-wrapper">
+        <h1 class="section-title">
+          Vídeos
+        </h1>
+        <p class="section-description">
+          <img class="section-image" src="assets/img/videos.jpg" />
+          O FloripaJS é uma comunidade formada em 2012 por um grupo de amigos que queriam fomentar o desenvolvimento front-end em Florianópolis e região. No ano seguinte o grupo começou a fazer reuniões e encontros pela internet. Mas foi apenas em 2014 que o grupo ganhou força devido ao meetup que ocorre frequentemente. Hoje o FloripaJS é uma das comunidades mais ativas do Brasil, graças ao seu público fiel nos encontros e também apoiando o mundo open-source. 
+        </p>
+        <a class="button button-youtube" href="#">
+          youtube.com/floripajs
+        </a>
+      </div>
+    </section>
+
+    <section id="ajude" class="ajude">
+      <div class="section-wrapper">
+        <h1 class="section-title">
+          Ajude o FloripaJS
+        </h1>
+        <p class="section-description">
+          O FloripaJS é uma comunidade formada em 2012 por um grupo de amigos que queriam fomentar o desenvolvimento front-end em Florianópolis e região. No ano seguinte o grupo começou a fazer reuniões e encontros pela internet. Mas foi apenas em 2014 que o grupo ganhou força devido ao meetup que ocorre frequentemente. Hoje o FloripaJS é uma das comunidades mais ativas do Brasil, graças ao seu público fiel nos encontros e também apoiando o mundo open-source. 
+        </p>
+        <div class="doacao-box">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="R33R3KX5NZNRN" />
+            <input type="image" src="https://www.paypal-brasil.com.br/novologocenter/img/paypal/botao-checkout_horizontal_doecom_as.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/pt_BR/i/scr/pixel.gif" width="1" height="1" />
+          </form>
         </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <div class="section-wrapper">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h2 class="footer-title">
+              FloripaJS
+            </h2>
+            <ul class="footer-list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#comunidade">Comunidade</a></li>
+              <li><a href="#meetup">Meetup</a></li>
+              <li><a href="#open-source">Open-source</a></li>
+              <li><a href="#videos">Vídeos</a></li>
+              <li><a href="#ajude">Ajude</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-title">
+              Conecte-se
+            </h2>
+            <ul class="footer-list">
+              <li><a href="{{ config.social.slack }}">Slack</a></li>
+              <li><a href="{{ config.social.github }}">Github</a></li>
+              <li><a href="{{ config.social.youtube }}">Youtube</a></li>
+              <li><a href="{{ config.social.twitter }}">Twitter</a></li>
+              <li><a href="{{ config.social.facebook }}">Facebook</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-title">
+              Contato
+            </h2>
+            <ul class="footer-list">
+              <li><a href="mailto:contato@floripajs.org">contato@floripajs.org</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+
+    <script>
+      window.addEventListener('scroll', () => {
+        const menu = document.getElementById('menu')
+        const dark = document.getElementById('ajude')
+        const classToAdd = 'lighten'
+
+        const menuPosition = menu.offsetTop
+        const menuHeight = menu.clientHeight
+
+        const darkPosition = dark.getBoundingClientRect().top
+        const darkHeight = dark.clientHeight
+
+        if ((menuPosition + menuHeight) < darkPosition) {
+          menu.classList.remove(classToAdd)
+        } else if (menuPosition > (darkPosition + darkHeight)) {
+          menu.classList.remove(classToAdd)
+        } else {
+          menu.classList.add(classToAdd)
+        }
+      })
+    </script>
+  </body>
 </html>

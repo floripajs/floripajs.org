@@ -4,7 +4,8 @@
   "version": "3.0.0",
   "license": "MIT",
   "scripts": {
-    "server": "gulp server"
+    "server": "gulp server",
+    "deploy": "gulp deploy"
   },
   "author": {
     "name": "Diogo Moretti",

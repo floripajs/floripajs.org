@@ -94,7 +94,7 @@
           Também conhecido como <a href="http://www.meetup.com/floripajs">FloripaJS Devs Meetup</a>, desde a primeira edição em 2014 o meetup ocorre, em média, a cada <strong>45 dias</strong>. Os encontros são totalmente <strong>gratuitos</strong> e sempre contam com o apoio de alguma(s) empresa(s), tanto para o local quanto para brindes, coffee-break e muitas vezes aquele chopp! Participe como quiser dos nossos meetups, seja como participante, speaker ou empresa apoiadora. Nosso foco é <strong>fortalecer a comunidade de desenvolvimento front-end de Florianópolis e região =]</strong>
         </p>
         <a class="button button-meetup" href="https://www.meetup.com/floripajs" target="_blank">
-          Participe
+          meetup.com/floripajs
         </a>
       </div>
     </section>
@@ -107,8 +107,8 @@
         <p class="section-description">
           Como forma de retribuir a comunidade tudo aquilo que usamos hoje, temos uma organização no <strong>Github</strong> para nossos projetos open-source. Precisamos de um time grande e forte, para assim criar novos projetos e dar manutenção nos já existentes. Se você deseja <strong>contribuir</strong> com nossos projetos, trazer um projeto novo para nossa organização ou somente fazer parte do time, entre em contato com alguns dos <a href="https://github.com/orgs/floripajs/people" target="_blank">devs que lá estão</a> ou pelo e-mail <a href="mailto:contato@floripajs.org">contato@floripajs.org</a> =]
         </p>
-        <a class="button button-github" href="#">
-          Contribua
+        <a class="button button-github" href="{{ config.social.github }}">
+          github.com/floripajs
         </a>
       </div>
     </section>
@@ -120,7 +120,7 @@
         </h1>
         <p class="section-description">
           <img class="section-image" src="assets/img/videos.jpg" />
-          O FloripaJS é uma comunidade formada em 2012 por um grupo de amigos que queriam fomentar o desenvolvimento front-end em Florianópolis e região. No ano seguinte o grupo começou a fazer reuniões e encontros pela internet. Mas foi apenas em 2014 que o grupo ganhou força devido ao meetup que ocorre frequentemente. Hoje o FloripaJS é uma das comunidades mais ativas do Brasil, graças ao seu público fiel nos encontros e também apoiando o mundo open-source. 
+          Gostamos muito de compartilhar conteúdo em vídeo. Por conta disso, todos nossos meetups são transmitidos ao vivo pelo nosso <a href="{{ config.social.youtube }}">Canal do Youtube</a>. Também fazemos a cobertura de alguns eventos entrevistando os participantes e fazendo algumas resenhas sobre as palestras. Acesse nosso canal e confira todas nossas coberturas e meetups!
         </p>
         <a class="button button-youtube" href="#">
           youtube.com/floripajs
@@ -134,15 +134,29 @@
           Ajude o FloripaJS
         </h1>
         <p class="section-description">
-          O FloripaJS é uma comunidade formada em 2012 por um grupo de amigos que queriam fomentar o desenvolvimento front-end em Florianópolis e região. No ano seguinte o grupo começou a fazer reuniões e encontros pela internet. Mas foi apenas em 2014 que o grupo ganhou força devido ao meetup que ocorre frequentemente. Hoje o FloripaJS é uma das comunidades mais ativas do Brasil, graças ao seu público fiel nos encontros e também apoiando o mundo open-source. 
+          O FloripaJS é uma comunidade sem fins lucrativos. Por conta disso, sempre bancamos nossos custos da plataforma de meetup, domínio, equipamento de filmagem e eventuais custos ao longo desses anos. Então se o FloripaJS já te ajudou, se você participa dos encontros ou mesmo gosta da nossa comunidade, pedimos que se você puder contribuir com alguma quantia isso ajudará o FloripaJS a se manter por muito mais tempo. * Para empresas nós emitimos nota fiscal.
         </p>
         <div class="doacao-box">
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick" />
-            <input type="hidden" name="hosted_button_id" value="R33R3KX5NZNRN" />
-            <input type="image" src="https://www.paypal-brasil.com.br/novologocenter/img/paypal/botao-checkout_horizontal_doecom_as.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-            <img alt="" border="0" src="https://www.paypal.com/pt_BR/i/scr/pixel.gif" width="1" height="1" />
-          </form>
+          <div class="doacao-column">
+            <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+            <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
+              <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+              <input type="hidden" name="currency" value="BRL" />
+              <input type="hidden" name="receiverEmail" value="diogo.pearljam@gmail.com" />
+              <input type="hidden" name="iot" value="button" />
+              <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/209x48-doar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+            </form>
+            <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+          </div>
+
+          <div class="doacao-column">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick" />
+              <input type="hidden" name="hosted_button_id" value="R33R3KX5NZNRN" />
+              <input type="image" src="https://www.paypal-brasil.com.br/novologocenter/img/paypal/botao-checkout_horizontal_doecom_as.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+              <img alt="" border="0" src="https://www.paypal.com/pt_BR/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+          </div>
         </div>
       </div>
     </section>

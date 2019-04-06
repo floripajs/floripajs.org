@@ -17,11 +17,11 @@
   },
   "devDependencies": {
     "del": "^4.0.0",
+    "gh-pages": "^2.0.1",
     "graceful-fs": "^4.1.15",
     "gulp": "3.9.1",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-connect": "^5.7.0",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "2.7.0",

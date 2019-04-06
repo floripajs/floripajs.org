@@ -8,11 +8,11 @@ const hbs = require('gulp-compile-handlebars')
 const yaml = require('js-yaml')
 const fs = require('graceful-fs')
 const del = require('del')
-const ghPages = require('gulp-gh-pages')
 const runSequence = require('run-sequence')
 const nib = require('nib')
 const rupture = require('rupture')
 const koutoSwiss = require('kouto-swiss')
+const ghpages = require('gh-pages')
 
 gulp.task('connect', () => {
   connect.server({
@@ -67,10 +67,9 @@ gulp.task('cname', () => {
 })
 
 gulp.task('deploy', () => {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages({
-      force: true
-    }))
+  return ghpages.publish('./dist', err => {
+    console.log('deploy error', err)
+  })
 })
 
 gulp.task('watch', () => {

@@ -68,7 +68,11 @@ gulp.task('cname', () => {
 
 gulp.task('deploy', () => {
   return ghpages.publish('./dist', err => {
-    console.log('deploy error', err)
+    if (err) {
+      console.log('deploy error', err)
+    } else {
+      console.log('deploy ok!', err)
+    }
   })
 })
 

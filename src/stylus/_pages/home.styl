@@ -60,9 +60,19 @@
 .doacao-box
   display flex
 
+  +below($phone)
+    display block
+
 .doacao-column
   &:first-child
     padding-right 2em
+
+    +below($phone)
+      padding-right 0
+
+  &:last-child
+    +below($phone)
+      padding-top 2em
 
 .footer
   position relative

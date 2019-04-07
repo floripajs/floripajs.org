@@ -628,8 +628,23 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+@media only screen and (max-width: 580px) {
+  .doacao-box {
+    display: block;
+  }
+}
 .doacao-column:first-child {
   padding-right: 2em;
+}
+@media only screen and (max-width: 580px) {
+  .doacao-column:first-child {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .doacao-column:last-child {
+    padding-top: 2em;
+  }
 }
 .footer {
   position: relative;

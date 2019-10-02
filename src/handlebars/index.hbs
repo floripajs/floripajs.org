@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>{{ config.title }} • {{ config.description }}</title>
 
@@ -31,8 +31,8 @@
   <body>
     <div id="home"></div>
 
-    <a class="logo" href="#home">
-      <img class="logo-image" src="assets/img/logo.svg" />
+    <a class="logo" href="#home" aria-label="Logo FloripaJS">
+      <img class="logo-image" src="assets/img/logo.svg" alt=""/>
     </a>
 
     <nav id="menu" class="menu">
@@ -90,7 +90,7 @@
           Meetup
         </h1>
         <p class="section-description">
-          <img class="section-image" src="assets/img/meetup.jpg" />
+          <img class="section-image" src="assets/img/meetup.jpg" alt="Uma sala cheia de pessoas durante um dos meetups do FloripaJS"/>
           Também conhecido como <a href="http://www.meetup.com/floripajs">FloripaJS Devs Meetup</a>, desde a primeira edição em 2014 o meetup ocorre, em média, a cada <strong>45 dias</strong>. Os encontros são totalmente <strong>gratuitos</strong> e sempre contam com o apoio de alguma(s) empresa(s), tanto para o local quanto para brindes, coffee-break e muitas vezes aquele chopp! Participe como quiser dos nossos meetups, seja como participante, speaker ou empresa apoiadora. Nosso foco é <strong>fortalecer a comunidade de desenvolvimento front-end de Florianópolis e região =]</strong>
         </p>
         <a class="button button-meetup" href="https://www.meetup.com/floripajs" target="_blank">
@@ -119,7 +119,7 @@
           Vídeos
         </h1>
         <p class="section-description">
-          <img class="section-image" src="assets/img/videos.jpg" />
+          <img class="section-image" src="assets/img/videos.jpg" alt="Um dos vídeos que estão no canal do Youtube do FloripaJS"/>
           Gostamos muito de compartilhar conteúdo em vídeo. Por conta disso, todos nossos meetups são transmitidos ao vivo pelo nosso <a href="{{ config.social.youtube }}">Canal do Youtube</a>. Também fazemos a cobertura de alguns eventos entrevistando os participantes e fazendo algumas resenhas sobre as palestras. Acesse nosso canal e confira todas nossas coberturas e meetups!
         </p>
         <a class="button button-youtube" href="{{ config.social.youtube }}" target="_blank">
